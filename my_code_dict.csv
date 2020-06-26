@@ -1,0 +1,241 @@
+name,id
+English,eng
+Arabic,ara
+Dutch,nld
+Latin,lat
+Middle English (1100-1500),enm
+French,fra
+Ancient Greek (to 1453),grc
+Old French (842-ca. 1400),fro
+Spanish,spa
+Old English (ca. 450-1100),ang
+Middle French (ca. 1400-1600),frm
+Anglo-Norman,xno
+German,deu
+Hebrew,heb
+Japanese,jpn
+Russian,rus
+Danish,dan
+Sanskrit,san
+Egyptian (Ancient),egy
+Armenian,hye
+Italian,ita
+Akkadian,akk
+Modern Greek (1453-),ell
+Turkish,tur
+Gujarati,guj
+Persian,fas
+Avestan,ave
+Alabama,akz
+Aleut,ale
+Portuguese,por
+Urdu,urd
+Malay (macrolanguage),msa
+Icelandic,isl
+Amdang,amj
+Old Persian (ca. 600-400 B.C.),peo
+Navajo,nav
+Romanian,ron
+Hindi,hin
+Maori,mri
+Georgian,kat
+Kazakh,kaz
+Classical Armenian,xcl
+Old Norse,non
+Lithuanian,lit
+"Series([], )",p_sla
+Kannada,kan
+Xhosa,xho
+Bashkir,bak
+Assyrian Neo-Aramaic,aii
+Indonesian,ind
+Oriya (macrolanguage),ori
+Basque,eus
+Macedonian,mkd
+Bilin,byn
+Serbo-Croatian,hbs
+Irish,gle
+Burmese,mya
+Korean,kor
+Caló,rmq
+Bengali,ben
+Mandarin Chinese,cmn
+Polish,pol
+Ukrainian,ukr
+Quechua,que
+Vietnamese,vie
+Ineseño,inz
+Afrikaans,afr
+"Series([], )",nah
+Welsh,cym
+Fon,fon
+Latvian,lav
+Eman,emn
+Ditidaht,dtd
+Scottish Gaelic,gla
+Marshallese,mah
+Esperanto,epo
+Galician,glg
+Gamilaraay,kld
+Ganda,lug
+Yiddish,yid
+Geez,gez
+Tibetan,bod
+Catalan,cat
+Mongolian,mon
+Old Irish (to 900),sga
+Panjabi,pan
+Taino,tnq
+Hakka Chinese,hak
+Finnish,fin
+Hawaiian,haw
+Pushto,pus
+Middle Low German,gml
+Yue Chinese,yue
+Hopi,hop
+Waorani,auc
+Sumerian,sux
+Inuktitut,iku
+Inupiaq,ipk
+Eastern Canadian Inuktitut,ike
+Thai,tha
+Wampanoag,wam
+Nepali (macrolanguage),nep
+Swedish,swe
+K'iche',quc
+Tswana,tsn
+Khmer,khm
+Kashaya,kju
+Uighur,uig
+Uzbek,uzb
+Gilbertese,gil
+Slovenian,slv
+Hungarian,hun
+Kurdish,kur
+Ladino,lad
+Lao,lao
+Luxembourgish,ltz
+Norwegian,nor
+Lojban,jbo
+Bulgarian,bul
+Middle High German (ca. 1050-1500),gmh
+Rapanui,rap
+Malayalam,mal
+Dhivehi,div
+Mandinka,mnk
+Tagalog,tgl
+Mapudungun,arn
+Marathi,mar
+Mi'kmaq,mic
+Ojibwa,oji
+Hittite,hit
+Venetian,vec
+Classical Nahuatl,nci
+Amharic,amh
+Zulu,zul
+Novial,nov
+Seneca,see
+Yoruba,yor
+Palauan,pau
+Coptic,cop
+Eastern Abnaki,aaq
+Classical Syriac,syc
+Min Nan Chinese,"nan"
+Pijin,pis
+Czech,ces
+Algonquin,alq
+Romany,rom
+Rusyn,rue
+Kinyarwanda,kin
+Lingua Franca,pml
+Samoan,smo
+Slovak,slk
+Sinhala,sin
+Swahili (macrolanguage),swa
+Tiv,tiv
+Estonian,est
+Telugu,tel
+Cherokee,chr
+Pali,pli
+Tahitian,tah
+Tigrinya,tir
+Albanian,sqi
+Tonga (Tonga Islands),ton
+Mohawk,moh
+Sarsi,srs
+Umbundu,umb
+Bislama,bis
+Volapük,vol
+"Series([], )",wit
+Yola,yol
+Gwichʼin,gwi
+Egyptian Arabic,arz
+Tatar,tat
+Shona,sna
+Ottoman Turkish (1500-1928),ota
+Scots,sco
+Manchu,mnc
+Kalaallisut,kal
+Moroccan Arabic,ary
+Powhatan,pim
+Andalusian Arabic,xaa
+Makasar,mak
+Wolof,wol
+Cajun French,frc
+Engenni,enn
+Guarequena,gae
+Middle Dutch (ca. 1050-1350),dum
+Breton,bre
+Choctaw,cho
+Azerbaijani,aze
+Old Dutch,odt
+Yagara,yxg
+Bandjalang,bdy
+Tok Pisin,tpi
+Tamil,tam
+Chinook jargon,chn
+Adnyamathanha,adt
+Cornish,cor
+Old High German (ca. 750-1050),goh
+Wiradjuri,wrh
+Lushootseed,lut
+Middle Mongolian,xng
+Nyungar,nys
+Kongo,kon
+Gothic,got
+Macushi,mbc
+Indo-Portuguese,idb
+Louisiana Creole,lou
+Sea Island Creole English,gul
+Guugu Yimidhirr,kky
+Inuinnaqtun,ikt
+Khoekhoe,naq
+Shoshoni,shh
+Haitian,hat
+Kriol,rop
+Sicilian,scn
+Pidgin Delaware,dep
+Ndonga,ndo
+Phoenician,phn
+Narragansett,xnt
+Angloromani,rme
+Delaware,del
+Southern Sotho,sot
+Central Siberian Yupik,ess
+Cree,cre
+Luo (Kenya and Tanzania),luo
+Lakota,lkt
+Masai,mas
+Twi,twi
+Kaurna,zku
+Balti,bft
+Jamaican Creole English,jam
+Shelta,sth
+Halkomelem,hur
+Faroese,fao
+Mirandese,mwl
+Tohono O'odham,ood
+Western Abnaki,abe
+Neapolitan,nap
+Konkani (macrolanguage),kok
+Catawba,chc
