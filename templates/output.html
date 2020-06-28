@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/static/style.css">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <p class="tooltip Tooltip Text">My Text</p> <div class="tooltip Tooltip Text">My Text </div>
+        {% for text in texts -%}{{ text|safe }} {%- endfor %}
+        <span class="tooltip Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora incidunt, quasi unde natus voluptatum ut obcaecati, quas sunt accusantium necessitatibus facilis ex voluptatibus soluta totam sed sapiente quos porro. Veritatis.">LONG TEXT</span><span class="tooltip Tooltip Text"> My Text</span>
+        {% for table in tables %}
+            {{ table|safe }}
+        {% endfor %}
+</html>
