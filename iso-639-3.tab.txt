@@ -3439,7 +3439,8 @@ kzd				I	L	Kadai
 kze				I	L	Kosena	
 kzf				I	L	Da'a Kaili	
 kzg				I	L	Kikai	
-kzi				I	L	Kelabit	
+kzi				I	L	Kelabit
+kzj						Coastal Kadazan	
 kzk				I	E	Kazukuru	
 kzl				I	L	Kayeli	
 kzm				I	L	Kais	
@@ -4437,7 +4438,8 @@ nab				I	L	Southern Nambikuára
 nac				I	L	Narak	
 nae				I	E	Naka'ela	
 naf				I	L	Nabak	
-nag				I	L	Naga Pidgin	
+nag				I	L	Naga Pidgin
+nah						Nahuatl	
 naj				I	L	Nalu	
 nak				I	L	Nakanai	
 nal				I	L	Nalik	
@@ -5093,7 +5095,11 @@ oyb				I	L	Oy
 oyd				I	L	Oyda	
 oym				I	L	Wayampi	
 oyy				I	L	Oya'oya	
-ozm				I	L	Koonzime	
+ozm				I	L	Koonzime
+p_gem						Proto-Germanic
+p_gmw						Proto-West-Germanic
+p_ine						Proto-Indo-European
+p_sla						Proto-Slavic	
 pab				I	L	Parecís	
 pac				I	L	Pacoh	
 pad				I	L	Paumarí	
@@ -7000,7 +7006,8 @@ wik				I	L	Wikalkan
 wil				I	E	Wilawila	
 wim				I	L	Wik-Mungkan	
 win				I	L	Ho-Chunk	
-wir				I	E	Wiraféd	
+wir				I	E	Wiraféd
+wit						Wintu	
 wiu				I	L	Wiru	
 wiv				I	L	Vitu	
 wiy				I	E	Wiyot	

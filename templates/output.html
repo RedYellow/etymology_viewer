@@ -1,15 +1,97 @@
 <!DOCTYPE html>
 <html>
-<link rel="stylesheet" href="/static/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+    </script>
+    <script>
+    function js_func(string, id)
+    {
+         document.getElementById(id).innerHTML = string;
+    }
+    </script>
+    <script>
+    function postData(input, id) {
+        $.ajax({
+            type: "POST",
+            url: "/#",
+            data: { param: input },
+            dataType: "string",
+            success:function(response_data_json) {
+                view_data = response_data_json.view_data;
+                console.log(view_data); //Shows the correct piece of information
+                js_func(view_data, id); // Pass data to a function
+            }
+        });
+        
+    }
+    </script>
+    <script>
+    function change_text(input){
+        document.getElementById("demo").innerHTML = input;
+    }
+    </script>
+    
+    <script>
+    function reveal_text(){
+        document.getElementById("demo").innerHTML = "Hello";
+    }
+    </script>
+    
+    <script type="text/javascript">
+        function showDiv() {
+            div = document.getElementById('tow');
+            div.style.display = "inline";
+        }
+    </script>
+    
+    
+<link rel="stylesheet" href="/static/style2.css">
     <head>
         <meta charset="UTF-8">
         <title>Title</title>
     </head>
     <body>
-        <p class="tooltip Tooltip Text">My Text</p> <div class="tooltip Tooltip Text">My Text </div>
         {% for text in texts -%}{{ text|safe }} {%- endfor %}
-        <span class="tooltip Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora incidunt, quasi unde natus voluptatum ut obcaecati, quas sunt accusantium necessitatibus facilis ex voluptatibus soluta totam sed sapiente quos porro. Veritatis.">LONG TEXT</span><span class="tooltip Tooltip Text"> My Text</span>
         {% for table in tables %}
             {{ table|safe }}
         {% endfor %}
+        
+        {% for key, value in ety_list %}
+            {% if value != 'other' %}
+                <span class="tooltip" onclick="javascript:showDiv();"> {{key}} <span class="tooltiptext">{{value}}</span></span>
+            {% else %}
+                {{ key }}
+            {% endif %}
+        {% endfor %}
+        
+    </body>
+    
+    <br>
+        <span style="white-space: pre-wrap">{{ click_func("unlaughable") }}</span>
+    <br>
+
+    
+    
+    <br>
+
+    <div type="text" onClick="js_func('asdfasdf', 'text')">tesssssst</div>
+    
+    <p id="demo">boop</p>
+    
+    <button onclick="change_text('{{click_func('unlaughable')}}')">Submit</button>
+    
+    <button onclick="reveal_text()">Reveal</button>
+    
+    <div id="one">
+        <div id="tow2" style="white-space: pre-wrap;">
+            {{click_func('unlaughable')}}
+        </div>
+        <button onclick="javascript:showDiv();">Click to show div</button>
+    </div>
+    
+    <span id="tow" style="white-space: pre-wrap; line-height: 0;" onclick="javascript:showDiv();">
+            {{click_func('unlaughable')}}
+    </span>
+    
+    
+    
 </html>

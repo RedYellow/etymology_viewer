@@ -9,7 +9,9 @@ Created on Mon Jun 22 21:34:32 2020
 import pandas as pd
 path = "/Users/Nic/Documents/Python Projects/Etymology_viewer/ety.txt"
 
-code_dict = pd.read_csv("my_code_dict.csv", keep_default_na = False).set_index("id").to_dict()["name"]
+#code_dict = pd.read_csv("my_code_dict.csv", keep_default_na = False).set_index("id").to_dict()["name"]
+code_dict = pd.read_csv("full_code_dict.csv", keep_default_na = False).set_index("id").to_dict()["name"]
+
 
 def main(eng_only = True, write = True):
     
@@ -55,6 +57,13 @@ def make_my_dict(df):
     x["id"] = etys
     x.to_csv("my_code_dict.csv", index=False)
     
+def make_full_dict():
+    codes_path = "/Users/Nic/Documents/Python Projects/Etymology_viewer/iso-639-3.tab.txt"
+    codes = pd.read_csv(codes_path, sep="\t", keep_default_na = False)[["Id", "Ref_Name"]]
+    codes = codes.rename(columns={"Id":"id", "Ref_Name":"name"})
+    codes.to_csv("full_code_dict.csv", index=False)
+    
+
 #x = cur.execute("SELECT COUNT(word), target_ety FROM eng_only \
 #                WHERE target_ety != 'eng' \
 #                GROUP BY target_ety").fetchall().sort(key=lambda x:x[0], reverse=True)  

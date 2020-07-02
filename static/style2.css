@@ -1,0 +1,29 @@
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    /* Position the tooltip */
+    position: absolute;
+    display: block;
+    z-index: 1;
+    width: 100%;
+    max-width: 300px;
+    min-width: 100px;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+  
+#tow2 { display: none; padding: 1px; line-height: .6;}
+
+#tow { display: none; padding: 1px;}
