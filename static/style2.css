@@ -26,4 +26,6 @@
   
 #tow2 { display: none; padding: 1px; line-height: .6;}
 
-#tow { display: none; padding: 1px;}
+#tow { display: none; padding: 1px; line-height: .1;}
+
+  .hiddentext { display: none; padding: 1px; line-height: .1;}

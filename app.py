@@ -27,8 +27,11 @@ def my_form_post():
 
 @app.route('/#', methods=['POST'])
 def click_func(string):
-    print("THIS IS THE STRING",string,"ADSASDFXXXXXXX")
-    return str(ety.tree(string)).replace("   ","           ")
+    string = str(ety.tree(string))
+    if "─" in string:
+        return string.replace("   ","           ")
+    else:
+        return ""
 
 
 def parse_text(text):
