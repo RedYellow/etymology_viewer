@@ -2,3 +2,4 @@ pandas
 ety==1.3.3
 nltk
 gunicorn
+flask
