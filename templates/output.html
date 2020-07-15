@@ -26,7 +26,9 @@
             {{ table|safe }}
         {% endfor %}
         
-        {% for key, value in ety_list %}
+    <br>
+    
+        {% for key, lemma, value in ety_list %}
             {% if value != 'other' %}
                 <span class="tooltip" onclick="javascript:showDiv('{{key}}');"> {{key}} <span class="tooltiptext">{{value}}</span></span>
             {% else %}
@@ -35,11 +37,10 @@
         {% endfor %}
         
     </body>
-    <br>
-    <br>
-    {% for key, value in ety_list %}
+    <h4> Hover over a word to see the first-level etymology. Click on a word to see its full etymology tree. </h2>
+    {% for key, lemma, value in ety_list %}
             {% if value != 'other' %}
-                <span style="white-space: pre-wrap; display: none; padding: 1px; line-height: .1;" id='{{key}}' >{{click_func(key)}}<br></br></span>
+                <span style="white-space: pre-wrap; display: none; padding: 1px; line-height: .1;" id='{{key}}' >{{click_func(lemma)}}<br></br></span>
                 
             {% endif %}
         {% endfor %}
