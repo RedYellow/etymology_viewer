@@ -83,26 +83,31 @@ def parse_text2(text, stem=True):
     codes = []
     for word in words:
         lemma = word
-        etym = ety.origins(word)
-        if len(etym) == 0:
-            etym = ety.origins(re.sub("[^A-Za-z']", "", word))
-        if len(etym) == 0:
-            etym = ety.origins(word.lower())
-        if len(etym) == 0:
-            etym = ety.origins(re.sub("[^A-Za-z']", "", word).lower())
-        if stem and len(etym) == 0:
-            cleaned_word = re.sub("[^A-Za-z']", "", word).lower().strip()
-            if len(cleaned_word) > 0:
-                word_lemma = lemmatize_word(cleaned_word)
-                lemma = word_lemma
-                etym = ety.origins(word_lemma)
-        if len(etym) == 0:
-            ety_list.append((word, lemma, "other / unknown"))
-            codes.append("other / unknown")
+        if word == "Wow" or word == "wow":
+            ety_list.append((word, lemma, "Owen Wilson"))
+            codes.append("Owen Wilson")
+        
         else:
-            items = [i._word+": "+i._language.name for i in etym]
-            ety_list.append((word, lemma, ", ".join(items)))
-            codes += [i._language.name for i in etym]
+            etym = ety.origins(word)
+            if len(etym) == 0:
+                etym = ety.origins(re.sub("[^A-Za-z']", "", word))
+            if len(etym) == 0:
+                etym = ety.origins(word.lower())
+            if len(etym) == 0:
+                etym = ety.origins(re.sub("[^A-Za-z']", "", word).lower())
+            if stem and len(etym) == 0:
+                cleaned_word = re.sub("[^A-Za-z']", "", word).lower().strip()
+                if len(cleaned_word) > 0:
+                    word_lemma = lemmatize_word(cleaned_word)
+                    lemma = word_lemma
+                    etym = ety.origins(word_lemma)
+            if len(etym) == 0:
+                ety_list.append((word, lemma, "other / unknown"))
+                codes.append("other / unknown")
+            else:
+                items = [i._word+": "+i._language.name for i in etym]
+                ety_list.append((word, lemma, ", ".join(items)))
+                codes += [i._language.name for i in etym]
     codes_series = pd.Series(codes, name="count")
     counts = codes_series.value_counts().to_frame()
     sum_count = counts["count"].sum()
